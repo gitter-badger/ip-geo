@@ -18,7 +18,8 @@
   "dependencies": {
     "mocha": "",
     "should": "",
-    "is-ip": "^1.0.0",
-    "request": "^2.58.0"
+    "is-ip": "",
+    "request": "",
+    "sync-request": ""
   }
 }
