@@ -17,6 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "mocha": "",
-    "should": ""
+    "should": "",
+    "is-ip": "^1.0.0",
+    "request": "^2.58.0"
   }
 }
