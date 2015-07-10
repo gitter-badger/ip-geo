@@ -41,6 +41,24 @@ describe('Get IP information object',function(){
             })
         });
     });
+
+    describe('With Google IP', function () {
+        it('returns a valid object',function(){
+            this.timeout(6000);
+            getIPgeo.getObjectInformationIPv4('64.233.167.94',function(err, result){
+                result.should.have.property('ip');
+                result.should.have.property('country_code');
+                result.should.have.property('country_name');
+                result.should.have.property('region_code');
+                result.should.have.property('region_name');
+                result.should.have.property('zip_code');
+                result.should.have.property('time_zone');
+                result.should.have.property('latitude');
+                result.should.have.property('longitude');
+                result.should.have.property('metro_code');
+            })
+        });
+    });
 });
 
 
