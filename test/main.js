@@ -11,7 +11,7 @@ describe('getJSONInformationIPv4', function () {
      });
    });
 
-    describe('With Google IP', function () {
+    describe('With Google IPV4', function () {
         this.timeout(10000);
         it('returns a result',function(){
             getIPgeo.getJSONInformationIPv4('64.233.167.94',function(err, result){
@@ -32,20 +32,20 @@ describe('Get IP information object',function(){
         });
     });
 
-    describe('With Google IP', function () {
+    describe('With Orange IPV4', function () {
         it('returns a result',function(){
             this.timeout(10000);
-            getIPgeo.getObjectInformationIPv4('64.233.167.94',function(err, result){
+            getIPgeo.getObjectInformationIPv4('81.52.142.217',function(err, result){
                 should.not.exists(err);
                 should.exists(result);
             })
         });
     });
 
-    describe('With Google IP', function () {
+    describe('With Free IPV4', function () {
         it('returns a valid object',function(){
             this.timeout(10000);
-            getIPgeo.getObjectInformationIPv4('64.233.167.94',function(err, result){
+            getIPgeo.getObjectInformationIPv4('212.27.48.10',function(err, result){
                 result.should.have.property('ip');
                 result.should.have.property('country_code');
                 result.should.have.property('country_name');

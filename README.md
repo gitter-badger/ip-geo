@@ -6,7 +6,7 @@ IN DEV
 
 IP GEO
 
-Get geolocation information from an IPV4.
+Get geolocation information from an IPV4 or IPV6.
 
 Install
 
