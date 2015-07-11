@@ -40,7 +40,7 @@ Get geolocation information from an IPV4 or IPV6.
 
 **City**
 
-objectInformation.city
+    objectInformation.city
 
 **Zip code**
 
