@@ -1,65 +1,63 @@
-IN DEV
-[![Build Status](https://travis-ci.org/damienmarchandfr/ip-geo.svg?branch=dev)](https://travis-ci.org/damienmarchandfr/ip-geo)
+DEV [![Build Status](https://travis-ci.org/damienmarchandfr/ip-geo.svg?branch=dev)](https://travis-ci.org/damienmarchandfr/ip-geo)
+PROD [![Build Status](https://travis-ci.org/damienmarchandfr/ip-geo.svg?branch=master)](https://travis-ci.org/damienmarchandfr/ip-geo)
 
 ![Logo IP-GEO](http://img11.hostingpics.net/pics/720136geoip.png)
 
 
-IP GEO
+#IP GEO#
 
 Get geolocation information from an IPV4 or IPV6.
 
-Install
+##Install##
 
-npm install ip-geo --save
+    npm install ip-geo --save
 
-Usage
 
-var ipGeo = require('ip-geo');
 
-//to get JSON
-var jsonInformation = ipGeo.getJSONInformationIPv4('8.8.8.8');
+##Usage##
 
-//to get object
-var objectInformation = ipGeo.getObjectInformationIPv4('8.8.8.8');
+    var ipGeo = require('ip-geo');
+	var objectInformation = ipGeo.getObjectInformationIPv4('8.8.8.8');
 
-Information
 
-Country code
+##Information##
 
-objectInformation.country_code
+**Country code**
 
-Country name 
+	objectInformation.country_code
 
-objectInformation.country_name
+**Country name** 
 
-Region code
+	objectInformation.country_name
 
-objectInformation.region_code
+**Region code**
 
-Region name
+	objectInformation.region_code
 
-objectInformation.region_name
+**Region name**
 
-City
+	objectInformation.region_name
+
+**City**
 
 objectInformation.city
 
-Zip code
+**Zip code**
 
-objectInformation.zip_code
+	objectInformation.zip_code
 
-Time zone
+**Time zone**
 
-objectInformation.time_zone
+	objectInformation.time_zone
 
-Latitude
+**Latitude**
 
-objectInformation.latitude
+	objectInformation.latitude
 
-Longitude
+**Longitude**
 
-objectInformation.longitude
+	objectInformation.longitude
 
-Metro code
+**Metro code**
 
-objectInformation.metro_code
+	objectInformation.metro_code
