@@ -24,7 +24,7 @@ describe('Get IP information ',function(){
     describe('With Free IPV4', function () {
         it('returns a valid object',function(){
             this.timeout(10000);
-            getIPgeo.getInformationIPv4('212.27.48.10',function(err, result){
+            getIPgeo.getInformationIPv4('81.52.142.217',function(err, result){
                 result.should.have.property('ip');
                 result.should.have.property('country_code');
                 result.should.have.property('country_name');
