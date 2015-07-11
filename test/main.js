@@ -10,6 +10,15 @@ describe('Get IP information ',function(){
             })
         });
     });
+
+    describe('With invalid IP', function () {
+        it('returns an error',function(){
+            getIPgeo.getInformationIPv4('23.ezr.4z.e',function(err, result){
+                should.exists(err);
+                should.not.exists(result);
+            })
+        });
+    });
 });
 
 
