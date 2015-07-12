@@ -2,7 +2,6 @@
 
 ![Logo IP-GEO](http://img11.hostingpics.net/pics/233012geoip.png)
 
-
 #IP GEO#
 
 Get geolocation information from an IPV4 or IPV6.
@@ -10,8 +9,6 @@ Get geolocation information from an IPV4 or IPV6.
 ##Install##
 
     npm install ip-geo --save
-
-
 
 ##Usage##
 
