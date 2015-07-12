@@ -17,6 +17,10 @@
   { "type" : "git"
   , "url" : "https://github.com/damienmarchandfr/ip-geo.git"
   },
+  "bugs" :
+  { "url" : "https://github.com/damienmarchandfr/ip-geo/issues",
+    "email" : "la_casserole_peinte@hotmail.fr"
+  },
   "author": "Damien Marchand",
   "license": "ISC",
   "dependencies": {
