@@ -1,4 +1,4 @@
-DEV [![Build Status](https://travis-ci.org/damienmarchandfr/ip-geo.svg?branch=dev)](https://travis-ci.org/damienmarchandfr/ip-geo)
+DEV [![Build Status](https://travis-ci.org/damienmarchandfr/ip-geo.svg?branch=master)](https://travis-ci.org/damienmarchandfr/ip-geo)
 
 ![Logo IP-GEO](http://img11.hostingpics.net/pics/233012geoip.png)
 
