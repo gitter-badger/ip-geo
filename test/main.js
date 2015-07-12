@@ -44,80 +44,55 @@ describe('Get IPV6 information ',function(){
 
 describe('Check IPV4 ',function(){
     describe('With empty IPV4', function () {
-        it('returns error',function(){
-            getIPgeo.isIpV4('',function(err, result){
-                should.not.exists(result);
-                should.exists(err);
-            })
+        it('returns false',function(){
+            should(getIPgeo.isIpV4('')).be.exactly(false);
         });
     });
 
     describe('With IPV6', function () {
         it('returns false',function(){
-            getIPgeo.isIpV4('5800:10C3:E3C3:F1AA:48E3:D923:D494:AAFF',function(err, result){
-                should.not.exists(err);
-                should.exists(result);
-                should(result).be.exactly(false);
-            })
+            should(getIPgeo.isIpV4('5800:10C3:E3C3:F1AA:48E3:D923:D494:AAFF')).be.exactly(false);
         });
     });
 
     describe('With invalid IP', function () {
-        it('returns error',function(){
-            getIPgeo.isIpV4('test',function(err, result){
-                should.not.exists(result);
-                should.exists(err);
-            })
+        it('returns false',function(){
+            should(getIPgeo.isIpV4('test')).be.exactly(false);
         });
     });
 
     describe('With valid IPV4', function () {
         it('returns true',function(){
-            getIPgeo.isIpV4('127.0.0.1',function(err, result){
-                should.not.exists(err);
-                should.exists(result);
-                should(result).be.exactly(true);
-            })
+            should(getIPgeo.isIpV4('127.0.0.1')).be.exactly(true);
         });
     });
 });
 
+
+
 describe('Check IPV6 ',function(){
     describe('With empty IPV6', function () {
-        it('returns error',function(){
-            getIPgeo.isIpV6('',function(err, result){
-                should.not.exists(result);
-                should.exists(err);
-            })
+        it('returns false',function(){
+            should(getIPgeo.isIpV6('')).be.exactly(false);
         });
     });
 
     describe('With IPV4', function () {
         it('returns false',function(){
-            getIPgeo.isIpV6('127.0.0.1',function(err, result){
-                should.not.exists(err);
-                should.exists(result);
-                should(result).be.exactly(false);
-            })
+            should(getIPgeo.isIpV6('127.0.0.1')).be.exactly(false);
         });
     });
 
     describe('With invalid IP', function () {
-        it('returns error',function(){
-            getIPgeo.isIpV6('test',function(err, result){
-                should.not.exists(result);
-                should.exists(err);
-            })
+        it('returns false',function(){
+            should(getIPgeo.isIpV6('test')).be.exactly(false);
         });
     });
 
     describe('With valid IPV6', function () {
         it('returns true',function(){
-            getIPgeo.isIpV6('5800:10C3:E3C3:F1AA:48E3:D923:D494:AAFF',function(err, result){
-                should.not.exists(err);
-                should.exists(result);
-                should(result).be.exactly(true);
-            })
+            should(getIPgeo.isIpV6('5800:10C3:E3C3:F1AA:48E3:D923:D494:AAFF')).be.exactly(true);
         });
     });
 });
+
