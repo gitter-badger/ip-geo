@@ -1,7 +1,6 @@
-DEV [![Build Status](https://travis-ci.org/damienmarchandfr/ip-geo.svg?branch=dev)](https://travis-ci.org/damienmarchandfr/ip-geo)
+[![Build Status](https://travis-ci.org/damienmarchandfr/ip-geo.svg?branch=master)](https://travis-ci.org/damienmarchandfr/ip-geo)
 
 ![Logo IP-GEO](http://img11.hostingpics.net/pics/233012geoip.png)
-
 
 #IP GEO#
 
@@ -11,43 +10,34 @@ Get geolocation information from an IPV4 or IPV6.
 
     npm install ip-geo --save
 
-
-
 ##Usage##
 
     var ipGeo = require('ip-geo');
 
 	//--------------IP V4--------------
 	var ipV4 = '8.8.8.8';
-	ipGeo.isIpV4(ipV4,function(err,result){
-		if(err){
-			console.error(err);
-		}
-		if(result){
-			ipGeo.getObjectInformationIPv4(ipV4,function(err,result){
-				if(err){
-					console.error(err);
-				}
-				console.log(result);
-			}
-		}
+	
+	if(ipGeo.isIpV4(ipV4)){
+	    ipGeo.getObjectInformationIPv4(ipV4,function(err,result){
+        				if(err){
+        					console.error(err);
+        				}
+        				console.log(result);
+        }
 	}
+	
 	
 	//--------------IP V6--------------
 	var ipV6 = '5800:10C3:E3C3:F1AA:48E3:D923:D494:AAFF';
-	ipGeo.isIpV6(ipV6,function(err,result){
-		if(err){
-			console.error(err);
-		}
-		if(result){
-			ipGeo.getObjectInformationIPv6(ipV6,function(err,result){
-				if(err){
-					console.error(err);
-				}
-				console.log(result);
-			}
-		}
-	}
+	
+	if(ipGeo.isIpV6(ipV6)){
+    	    ipGeo.getObjectInformationIPv6(ipV6,function(err,result){
+            				if(err){
+            					console.error(err);
+            				}
+            				console.log(result);
+            }
+    	}
 
 
 ##Information##
