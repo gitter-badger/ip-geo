@@ -18,7 +18,7 @@ Get geolocation information from an IPV4 or IPV6.
 	var ipV4 = '8.8.8.8';
 	
 	if(ipGeo.isIpV4(ipV4)){
-	    ipGeo.getObjectInformationIPv4(ipV4,function(err,result){
+	    ipGeo.getInformationIPv4(ipV4,function(err,result){
         				if(err){
         					console.error(err);
         				}
@@ -31,7 +31,7 @@ Get geolocation information from an IPV4 or IPV6.
 	var ipV6 = '5800:10C3:E3C3:F1AA:48E3:D923:D494:AAFF';
 	
 	if(ipGeo.isIpV6(ipV6)){
-    	    ipGeo.getObjectInformationIPv6(ipV6,function(err,result){
+    	    ipGeo.getInformationIPv6(ipV6,function(err,result){
             				if(err){
             					console.error(err);
             				}
