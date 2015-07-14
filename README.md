@@ -4,6 +4,8 @@
 
 #IP GEO#
 
+[![Join the chat at https://gitter.im/damienmarchandfr/ip-geo](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/damienmarchandfr/ip-geo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Get geolocation information from an IPV4 or IPV6.
 
 ##Install##
